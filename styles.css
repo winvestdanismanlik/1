@@ -110,3 +110,91 @@ footer {
         font-size: 16px;
     }
 }
+
+.nav-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002244;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-logo {
+    max-height: 50px;
+    width: auto;
+}
+
+@media (min-width: 769px) {
+    .nav-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .left-header {
+        margin-bottom: 0;
+    }
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002244;
+    color: white;
+    padding: 20px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo-small {
+    max-width: 60px;
+    height: auto;
+}
+
+
+.social-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+.instagram {
+    background-color: #E1306C;
+}
+
+.instagram:hover {
+    background-color: #c6285b;
+}

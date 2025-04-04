@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 section.style.display = (section.id === targetId) ? "block" : "none";
             });
 
-            // Scroll to top (mobilde görünmeyen kısmı ortaya çıkarır)
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
