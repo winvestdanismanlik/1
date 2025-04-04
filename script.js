@@ -5,11 +5,17 @@ document.addEventListener("DOMContentLoaded", function () {
     links.forEach(link => {
         link.addEventListener("click", function (e) {
             e.preventDefault();
-            
-            sections.forEach(section => section.classList.remove("active"));
-            
+
             const targetId = this.getAttribute("href").substring(1);
-            document.getElementById(targetId).classList.add("active");
+            sections.forEach(section => {
+                section.style.display = (section.id === targetId) ? "block" : "none";
+            });
+
+            // Scroll to top (mobilde görünmeyen kısmı ortaya çıkarır)
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
     });
 });
